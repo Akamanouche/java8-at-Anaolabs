@@ -36,24 +36,29 @@ public class TestStreams {
         ActionOnPerson displayNameAndAge = (p) -> System.out.println("name/age: " + p.getFirstName()+"/"+p.getAge());
 
         // afficher le resultat
-        streamSeniors.forEach(displayNameAndAge::act);
+        streamSeniors.forEach(displayNameAndAge::doIt);
     }
 
 
     @Test
-    public void testFilterAndMap1_onStream() {
+    public void testFilterAndMap1() {
         List<Person> persons = asList(new Person("Joe", 50), new Person("Jim", 60), new Person("John", 15));
 
         // Filtering + Mapping en un Stream de Employee(s)
         Stream<Employee> streamSeniors = persons.stream()
                 .filter(p -> p.getAge() > 18)
                 .map(p -> new Employee(p));
+        
+        // Si je fait ici un ;count() sur mon Stream, je ne pourrai plus le consommer plus loin dans le .forEach() !
+        // System.out.println("Size of my Stream: "+streamSeniors.count());
+        
+        
 
         // Ma lambda juste pour afficher le resultat
         ActionOnEmployee displayNameAndAge = (e) -> System.out.println("employee name/job: " + e.getPerson().getFirstName()+"/"+e.getAge());
 
         // afficher le resultat
-        streamSeniors.forEach(displayNameAndAge::act);
+        streamSeniors.forEach(displayNameAndAge::doIt);
         
         // "streamSeniors" étant ici un Stream, je NE peux PLUS le reconsommer
         //streamSeniors.forEach(displayNameAndAge::act);
@@ -61,28 +66,31 @@ public class TestStreams {
     }
     
     @Test
-    public void testFilterAndMap2_onStream() {
+    public void testFilterAndMap2() {
         List<Person> persons = asList(new Person("Joe", 50), new Person("Jim", 60), new Person("John", 15));
 
         // Filtering + Mapping en une Liste de Employee(s)
         List<Employee> listSeniors = persons.stream()
                 .filter(p -> p.getAge() > 18)
                 .map(p -> new Employee(p))
-                .collect(Collectors.toList());
+                .collect(Collectors.toList());		// <== ici, on dégage une List à partir du Stream
 
+        System.out.println("Size of my List: "+listSeniors.size());
+        
+        
         // Ma lambda juste pour afficher le resultat
         ActionOnEmployee displayNameAndAge = (e) -> System.out.println("employee name/job: " + e.getPerson().getFirstName()+"/"+e.getAge());
 
         // afficher le resultat
-        listSeniors.forEach(displayNameAndAge::act);
+        listSeniors.forEach(displayNameAndAge::doIt);
         
         // "listSeniors" étant ici une List (et non plus un Stream), je peux le reconsommer
-        listSeniors.forEach(displayNameAndAge::act);
+        listSeniors.forEach(displayNameAndAge::doIt);
         
     }
     
     @Test
-    public void testFilterAndMap3_onStream() {
+    public void testFilterAndMap3() {
         List<Person> persons = asList(new Person("Joe", 50), new Person("Jim", 60), new Person("John", 15));
 
         // Filtering + Mapping en une liste de Integer(s) = age
@@ -107,7 +115,7 @@ public class TestStreams {
 //
 //        // 1) Filtering
 //        Stream<Employee> streamSeniors = persons.stream()
-//                .filter(filter::filter)
+//                .filter(filter)
 //                .map(p -> new Employee(p));
 //
 //        // Ma lambda

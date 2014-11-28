@@ -62,7 +62,7 @@ public class RosterTest {
     public static void printMembersOlderThan(List<Member> roster, int age) {
         for (Member p : roster) {
             if (p.getAge() >= age) {
-                p.printMember();
+                p.printMemberWithAge();
             }
         }
     }
@@ -73,7 +73,7 @@ public class RosterTest {
         List<Member> roster, int low, int high) {
         for (Member p : roster) {
             if (low <= p.getAge() && p.getAge() < high) {
-                p.printMember();
+                p.printMemberWithAge();
             }
         }
     }
@@ -86,7 +86,7 @@ public class RosterTest {
         List<Member> roster, CheckMember tester) {
         for (Member p : roster) {
             if (tester.test(p)) {
-                p.printMember();
+                p.printMemberWithAge();
             }
         }
     }
@@ -97,7 +97,7 @@ public class RosterTest {
         List<Member> roster, Predicate<Member> tester) {
         for (Member p : roster) {
             if (tester.test(p)) {
-                p.printMember();
+                p.printMemberWithAge();
             }
         }
     }
@@ -183,7 +183,7 @@ public class RosterTest {
             Member.Sex.MALE, "bob@example.com"));
 
         for (Member p : roster) {
-            p.printMember();
+            p.printMemberWithAge();
         }
 
         // Approach 1: Create Methods that Search for Members that Match One
@@ -274,7 +274,7 @@ public class RosterTest {
             p -> p.getGender() == Member.Sex.MALE
                 && p.getAge() >= 18
                 && p.getAge() <= 25,
-            p -> p.printMember()
+            p -> p.printMemberWithAge()
         );
 
         System.out.println();

@@ -27,7 +27,7 @@ public class TestLambdas {
          */
         ActionOnPerson shoutFirstName = (p) -> System.out.println("my name is " + p.getFirstName());
 
-        ActionOnPerson shoutJob = (p) -> System.out.println("my age is " + p.getAge());
+        ActionOnPerson shoutAge = (p) -> System.out.println("my age is " + p.getAge());
 
 //        persons.forEach(System.out::println);
 
@@ -36,9 +36,9 @@ public class TestLambdas {
          *
          * PUISSANT !!
          */
-        persons.forEach(shoutFirstName::act);
+        persons.forEach(shoutFirstName::doIt);
 
-        persons.forEach(shoutJob::act);
+        persons.forEach(shoutAge::doIt);
 
     }
 }

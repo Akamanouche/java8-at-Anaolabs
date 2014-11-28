@@ -8,7 +8,8 @@ package org.anaolabs.java8.lambdas;
  * To change this template use File | Settings | File Templates.
  */
 public interface Action<T> {
-    void act(T t);
+	
+    void doIt(T t);
 
 //    default void dump(T t) {
 //        System.out.println(t);

@@ -65,7 +65,7 @@ public class Member {
         return age;
     }
 
-    public void printMember() {
+    public void printMemberWithAge() {
       System.out.println(name + ", " + this.getAge());
     }
     

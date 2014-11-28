@@ -44,7 +44,7 @@ public class MyMembersJunitTest {
         roster.add(
                 new Member(
                         "George",
-                        new GregorianCalendar(1991, 8, 13),
+                        new GregorianCalendar(1994, 8, 13),
                         Member.Sex.MALE, "george@example.com"));
         roster.add(
                 new Member(
@@ -60,7 +60,7 @@ public class MyMembersJunitTest {
             List<Member> roster, CheckMember tester) {
         for (Member member : roster) {
             if (tester.test(member)) {
-                member.printMember();
+                member.printMemberWithAge();
             }
         }
     }
@@ -92,13 +92,13 @@ public class MyMembersJunitTest {
     ///////////////////////////////////////////////////////////////////////////
 
     /*
-     * Cette fois-ci, on passe par un
+     * Cette fois-ci, on passe par un objet "Predicate"
      */
     private void printMembersWithPredicate(
             List<Member> roster, Predicate<Member> tester) {
         for (Member member : roster) {
             if (tester.test(member)) {
-                member.printMember();
+                member.printMemberWithAge();
             }
         }
     }
