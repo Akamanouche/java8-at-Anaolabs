@@ -1,0 +1,54 @@
+
+
+-----------------------------------------------------------------------------------------------------------------------
+--- [07/08/2013] ------------------------------------------------------------------------------------------------------
+
+    # TODO :
+        Prendre du recul
+        Etudier les methodes du Predicate, du Consumer, ...
+
+
+    # MyMembersJunitTest
+        - arrêt sur l'approche 8...
+
+    # j'ai sorti les approches 5,6,7 dans un vrai test JUnit : MyMembersJunitTest
+
+
+-----------------------------------------------------------------------------------------------------------------------
+--- [05/08/2013] ------------------------------------------------------------------------------------------------------
+
+    # MyRosterTest
+        - arrêt sur la notion de Consumer<T> (voir "approach 7") dans [ORACLE_TUTO]
+
+
+-----------------------------------------------------------------------------------------------------------------------
+--- [02/08/2013] ------------------------------------------------------------------------------------------------------
+
+    # Switch sur un autre tuto
+        > http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html        [ORACLE_TUTO]
+        Article très interessant !
+
+    # Creation dans package ...sample.oracle de tests inspirés du tuto Oracle :
+
+        # Packages : org.anaolabs.java8.sample.oracle
+        # classes :
+            - Member
+            - RosterTest
+                ...que j'ai duppliqué en "MyRosterTest" avec des commentaires perso
+
+    *********************************************************
+    TOUTES LES ETAPES SONT BIEN COMMENTEES DANS [ORACLE_TUTO]
+    Il s'agit d'un excellent tutoriel
+    *********************************************************
+
+-----------------------------------------------------------------------------------------------------------------------
+--- [01/08/2013] ------------------------------------------------------------------------------------------------------
+
+    # Creation de tests inspirés du doc de Anton Arhipov
+        "Java 8 Revealed"                                       [AARHIPOV_TUTO]
+
+    dans test/java/org/anaolabs/java8
+        - defenders
+        - lambdas
+        - streams
+-----------------------------------------------------------------------------------------------------------------------
