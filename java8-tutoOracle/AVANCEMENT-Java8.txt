@@ -1,6 +1,25 @@
 
 
 -----------------------------------------------------------------------------------------------------------------------
+--- [26/09/2016] ------------------------------------------------------------------------------------------------------
+
+	# Voir mes commentaires sur le test "TestLambdas" (dans la partie ./lambdas)
+
+	# Rappel : sur ce qu'amène l'annotation "@FunctionalInterface" :
+		"
+		A functional interface can define as many default and static methods as it requires.
+		However, it must declare exactly one abstract method, or the compiler will complain that it isn't a functional interface.
+		"
+
+-----------------------------------------------------------------------------------------------------------------------
+--- [22/09/2016] ------------------------------------------------------------------------------------------------------
+
+	# Retour sur la partie ./streams
+	
+		==> Le "TestStreams" donne une bonne idée des méthodes : filter(), map(), collect() de la classe "Stream".
+
+
+-----------------------------------------------------------------------------------------------------------------------
 --- [07/08/2013] ------------------------------------------------------------------------------------------------------
 
     # TODO :

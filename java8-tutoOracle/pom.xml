@@ -5,12 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>org.anaolabs.java</groupId>
+		<groupId>org.anaolabs.java8</groupId>
 		<artifactId>java8-at-Anaolabs</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-    <groupId>org.anaolabs.java8</groupId>
     <artifactId>java8-tutoOracle</artifactId>
 	<description>Java 8 tests from Oracle Tuto</description>
     <version>1.0-SNAPSHOT</version>
