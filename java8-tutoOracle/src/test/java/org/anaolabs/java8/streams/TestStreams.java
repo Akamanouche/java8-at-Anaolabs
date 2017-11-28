@@ -26,11 +26,15 @@ public class TestStreams {
     public void testFilter_onStream() {
         List<Person> persons = asList(new Person("Joe", 50), new Person("Jim", 60), new Person("John", 15));
 
-        /** Mon Stream filtred
-         * Remarque :
-         * le filtering, lui, ne s'appuie pas sur une lambda
+        /**
+         * Filtering de mon Stream
+         * 
+         * # Remarques/Rappels :
+         * 	1) le filtering, lui, ne s'appuie pas sur une lambda
+         * 	2) c'est le forEach sur le stream qui constitue la méthode "terminale". 
          */
-        Stream<Person> streamSeniors = persons.stream().filter(p -> p.getAge() > 18);
+        Stream<Person> streamSeniors = persons.stream()
+        		.filter(p -> p.getAge() > 18);
 
         // Ma lambda juste pour afficher le resultat (n'intervient pas du tout dans la phase de filtering)
         ActionOnPerson displayNameAndAge = (p) -> System.out.println("name/age: " + p.getFirstName()+"/"+p.getAge());
@@ -44,15 +48,19 @@ public class TestStreams {
     public void testFilterAndMap1() {
         List<Person> persons = asList(new Person("Joe", 50), new Person("Jim", 60), new Person("John", 15));
 
-        // Filtering + Mapping en un Stream de Employee(s)
+        /**
+         * Filtering + Mapping en un Stream de Employee(s)
+         *
+         * # Remarques/Rappels :
+         * 	1) La difference avec le test precedent est que nous transformons les Person en Employee avec la methode .map()
+         *  
+         */
         Stream<Employee> streamSeniors = persons.stream()
                 .filter(p -> p.getAge() > 18)
                 .map(p -> new Employee(p));
         
-        // Si je fait ici un ;count() sur mon Stream, je ne pourrai plus le consommer plus loin dans le .forEach() !
-        // System.out.println("Size of my Stream: "+streamSeniors.count());
-        
-        
+        // Si je fait ici un .count() sur mon Stream, je ne pourrai plus le consommer plus loin dans le .forEach() !
+//         System.out.println("Size of my Stream: "+streamSeniors.count());
 
         // Ma lambda juste pour afficher le resultat
         ActionOnEmployee displayNameAndAge = (e) -> System.out.println("employee name/job: " + e.getPerson().getFirstName()+"/"+e.getAge());
@@ -60,7 +68,7 @@ public class TestStreams {
         // afficher le resultat
         streamSeniors.forEach(displayNameAndAge::doIt);
         
-        // "streamSeniors" Ã©tant ici un Stream, je NE peux PLUS le reconsommer
+        // "streamSeniors" Ã©tant ici un Stream, je NE peux PLUS le re-consommer
         //streamSeniors.forEach(displayNameAndAge::act);
         
     }
@@ -81,7 +89,13 @@ public class TestStreams {
         // Ma lambda juste pour afficher le resultat
         ActionOnEmployee displayNameAndAge = (e) -> System.out.println("employee name/job: " + e.getPerson().getFirstName()+"/"+e.getAge());
 
-        // afficher le resultat
+        /**
+         * Afficher le resultat
+         * 
+         * # REMARQUES
+         * 	1) le .forEach() est une méthode par défaut de l'interface [Iterable]
+         * 	2) il sait prendre en compte une Lambda (en fait : une "SAM", ici : ActionOnEmployee)
+         */
         listSeniors.forEach(displayNameAndAge::doIt);
         
         // "listSeniors" Ã©tant ici une List (et non plus un Stream), je peux le reconsommer
@@ -100,7 +114,8 @@ public class TestStreams {
 
         // afficher le resultat
         streamSeniorAges.forEach((e) -> System.out.println("age: " + e));
-        // ou encore :
+        
+        // ... ou encore/aussi :
         //streamSeniorAges.forEach(System.out::println);
     }
 
