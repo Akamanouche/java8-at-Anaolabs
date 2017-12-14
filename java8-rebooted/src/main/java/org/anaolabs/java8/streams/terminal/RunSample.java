@@ -1,6 +1,5 @@
 package org.anaolabs.java8.streams.terminal;
 
-import java.util.Arrays;
 import java.util.stream.Stream;
 
 public class RunSample {
