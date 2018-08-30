@@ -8,3 +8,19 @@ Ici, il est question de la nouvelle classe "Optional".
 
 # Equivalent en Scala : "Option"
 
+
+
+-- [14/02/2018] ---------------------------------------------------------------
+
+	La méthode .ifPresent(...) de Optional est chainable sur les STREAM...
+	En effet le .findFirst() de Stream renvoie un Optional
+	==> on peut donc y coller au cul un .ifPresent(...) :
+	   
+		Arrays.asList("a1", "a2", "a3")
+		.stream()
+		.findFirst()
+==>		.ifPresent(System.out::println);
+	
+
+-------------------------------------------------------------------------------
+

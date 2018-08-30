@@ -1,13 +1,14 @@
 /**
  * 
  */
-package org.anaolabs.java8.streams.newuse;
+package org.anaolabs.java8.streams.newuse.list;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import org.anaolabs.java8.streams.newuse.Person;
 import org.junit.Before;
 import org.junit.Test;
 

@@ -2,7 +2,7 @@ package org.anaolabs.java8.streams.terminal;
 
 import java.util.stream.Stream;
 
-public class RunSample {
+public class OperationTerminalOrNot {
 
 	public static void main(String[] args) {
 

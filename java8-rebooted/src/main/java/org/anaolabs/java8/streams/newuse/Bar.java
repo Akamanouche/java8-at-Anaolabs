@@ -8,15 +8,18 @@ package org.anaolabs.java8.streams.newuse;
  *
  */
 public class Bar {
-	String name;
-
-	Bar(String name) {
+	
+	public String name;
+	
+	public Bar( String name ) {
+		
 		this.name = name;
 	}
 	
 	@Override
 	public String toString() {
+		
 		return name;
 	}
-
+	
 }

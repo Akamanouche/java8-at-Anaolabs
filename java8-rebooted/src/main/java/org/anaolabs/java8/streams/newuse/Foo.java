@@ -13,16 +13,19 @@ import java.util.List;
  *
  */
 public class Foo {
-	String name;
-	List<Bar> bars = new ArrayList<>();
-
-	Foo(String name) {
+	
+	public String	 name;
+	public List<Bar> bars = new ArrayList<>();
+	
+	public Foo( String name ) {
+		
 		this.name = name;
 	}
 	
 	@Override
 	public String toString() {
-		return String.format("%s: %s", name, bars);
+		
+		return String.format( "%s: %s", name, bars );
 	}
-
+	
 }

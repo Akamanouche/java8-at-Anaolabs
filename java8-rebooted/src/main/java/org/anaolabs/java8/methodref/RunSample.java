@@ -9,9 +9,6 @@ public class RunSample {
 	}
 
 	private static void sample1() {
-		
-		Arrays.stream(new int[] {10, 2, 15, 50})
-		.reduce(Math::max)
-		;
+		Arrays.stream(new int[] { 10, 2, 15, 50 }).reduce(Math::max);
 	}
 }

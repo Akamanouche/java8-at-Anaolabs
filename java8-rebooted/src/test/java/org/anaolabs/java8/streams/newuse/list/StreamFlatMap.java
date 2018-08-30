@@ -1,13 +1,15 @@
 /**
  * 
  */
-package org.anaolabs.java8.streams.newuse;
+package org.anaolabs.java8.streams.newuse.list;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
+import org.anaolabs.java8.streams.newuse.Bar;
+import org.anaolabs.java8.streams.newuse.Foo;
 import org.junit.Before;
 import org.junit.Test;
 
