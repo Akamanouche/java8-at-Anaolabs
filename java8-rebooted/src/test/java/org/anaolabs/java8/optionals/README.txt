@@ -4,7 +4,11 @@ Ici, il est question de la nouvelle classe "Optional".
 
 ==> Elle permet d'éviter les "NullPointerException" 
 
-# voir : http://www.touilleur-express.fr/2014/11/07/optional-en-java-8/
+# Liens
+-------
+	> http://www.touilleur-express.fr/2014/11/07/optional-en-java-8/
+	> https://www.mkyong.com/java8/java-8-optional-in-depth/
+	
 
 # Equivalent en Scala : "Option"
 
