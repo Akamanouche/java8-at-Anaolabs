@@ -1,0 +1,14 @@
+Airport||Transfer||1
+Airport||Lounge||5
+Airport||Check In||2
+Airport||Access||3||At the airport
+Airport||Lack of Assistance||4
+Airport||At the gate||6
+Baggage||Delay||1
+Baggage||Damage||2
+Baggage||Loss||3
+Baggage||Pilferage||4
+Flight Disruption||Delay||1
+Flight Disruption||Delay + Reroute||2
+Flight Disruption||Cancellation||3
+Flight Disruption||Cancellation + Reroute||4

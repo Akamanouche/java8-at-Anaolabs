@@ -23,7 +23,8 @@ public class SortingCollections {
 		map.put( 1, new Student( "Kevin", 45  ) );
 		map.put( 2, new Student( "Sylvain", 25 ) );
 		map.put( 3,  new Student( "Matthieu", 50 ) );
-		
+
+		// Sort map based on on of element field (here: the 'age' of the student)
 		System.out.println( "# tri custom selon age Student..." );
 		Map<Integer, Student> sortedMap = map.entrySet()
 				.stream()
@@ -33,6 +34,7 @@ public class SortingCollections {
 				                            (e1, e2) -> e1, LinkedHashMap::new      // !! ATTENTION !! Sans cela, le tri est perdu	
 				                            ) );
 		
+		// Check
 		System.out.println( "# Display new map" );
 		sortedMap.entrySet()
 				.stream()
