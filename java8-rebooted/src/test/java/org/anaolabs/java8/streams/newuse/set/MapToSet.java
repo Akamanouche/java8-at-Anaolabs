@@ -1,12 +1,12 @@
 package org.anaolabs.java8.streams.newuse.set;
 
+import org.junit.Before;
+import org.junit.Test;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
-
-import org.junit.Before;
-import org.junit.Test;
 
 /**
  *
@@ -43,11 +43,15 @@ public class MapToSet {
 	@Test
 	public void testGetSetFromMapWithTransformation() {
 	
-		map.values()
+	    Set<String> set = null;
+	    
+		set = map.values()
 			.stream()
 			.map( v -> v + "-enriched")
 			.collect( Collectors.toSet() )
-			.forEach( v -> System.out.println( "\t- "+v ) );
+			;
+		
+		set.forEach( v -> System.out.println( "\t- "+v ) );
 	}
 
 }
