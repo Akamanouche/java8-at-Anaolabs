@@ -49,6 +49,16 @@ public class ReadWriteFile {
 		return Files.readAllLines(path);
 	}
 	
+
+	
+    public String readSmallFileOneShot(String filepath) throws IOException {
+        Path path = Paths.get(filepath);
+        
+        return new String( Files.readAllBytes(path), "UTF-8"); 
+        
+    }
+	
+	
 	///////////////////////////////////////////////////////////////////////////
 	// Methods for "large" files
 	///////////////////////////////////////////////////////////////////////////

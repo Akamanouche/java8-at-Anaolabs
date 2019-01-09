@@ -1,0 +1,180 @@
+[
+    {
+        "name": "Central America",
+        "iataAreaCode": 1,
+        "countries": [
+            {
+                "countryCode": "BZ",
+                "countryName": "BELIZE",
+                "cities": [
+                    {
+                        "iataCode": "BCV",
+                        "name": "BELMOPAN",
+                        "isCapital": true,
+                        "latitude": "17 16 00 N",
+                        "longitude": "088 47 00 W",
+                        "tzRegionName": "America/Belize",
+                        "timezoneCode": "BZ",
+                        "airports": [
+                            {
+                                "iataCode": "BCV",
+                                "name": "HECTOR SILVA AIRPORT",
+                                "locationType": "A"
+                            }
+                        ]
+                    },
+                    {
+                        "iataCode": "BGK",
+                        "name": "BIG CREEK",
+                        "latitude": "16 31 00 N",
+                        "longitude": "088 24 00 W",
+                        "tzRegionName": "America/Belize",
+                        "timezoneCode": "BZ",
+                        "airports": [
+                            {
+                                "iataCode": "BGK",
+                                "name": "BIG CREEK AIRPORT",
+                                "locationType": "A"
+                            }
+                        ]
+                    },
+                    {
+                        "iataCode": "SVK",
+                        "name": "SILVER CREEK",
+                        "latitude": "16 26 00 N",
+                        "longitude": "088 12 00 W",
+                        "tzRegionName": "America/Belize",
+                        "timezoneCode": "BZ",
+                        "airports": [
+                            {
+                                "iataCode": "SVK",
+                                "name": "SILVER CREEK AIRPORT",
+                                "locationType": "A"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "countryCode": "GT",
+                "countryName": "GUATEMALA",
+                "cities": [
+                    {
+                        "iataCode": "AAZ",
+                        "name": "QUETZALTENANGO",
+                        "latitude": "14 51 56 N",
+                        "longitude": "091 30 07 W",
+                        "tzRegionName": "America/Guatemala",
+                        "timezoneCode": "GT",
+                        "airports": [
+                            {
+                                "iataCode": "AAZ",
+                                "name": "QUETZALTENANGO AIRPORT",
+                                "locationType": "A"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Europe",
+        "iataAreaCode": 2,
+        "countries": [
+            {
+                "countryCode": "DE",
+                "countryName": "GERMANY",
+                "cities": [
+                    {
+                        "iataCode": "AAH",
+                        "name": "AACHEN",
+                        "latitude": "50 49 23 N",
+                        "longitude": "006 11 11 E",
+                        "tzRegionName": "Europe/Berlin",
+                        "timezoneCode": "DE",
+                        "airports": [
+                            {
+                                "iataCode": "AAH",
+                                "name": "MERZBRUECK AIRPORT",
+                                "locationType": "A"
+                            },
+                            {
+                                "iataCode": "XHJ",
+                                "name": "AACHEN HBF RAILWAY STATION",
+                                "locationType": "R"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "countryCode": "ES",
+                "countryName": "SPAIN",
+                "cities": [
+                    {
+                        "iataCode": "ABC",
+                        "name": "ALBACETE",
+                        "latitude": "38 56 55 N",
+                        "longitude": "001 51 49 W",
+                        "tzRegionName": "Europe/Madrid",
+                        "timezoneCode": "ES1",
+                        "airports": [
+                            {
+                                "iataCode": "ABC",
+                                "name": "ALBACETE AIRPORT",
+                                "locationType": "A"
+                            },
+                            {
+                                "iataCode": "EEM",
+                                "name": "ALBACETE RAILWAY STATION",
+                                "locationType": "R"
+                            },
+                            {
+                                "iataCode": "XJJ",
+                                "name": "ALBACETE BUS STATION",
+                                "locationType": "B"
+                            }
+                        ]
+                    },
+                    {
+                        "iataCode": "ACE",
+                        "name": "LANZAROTE",
+                        "latitude": "28 56 15 N",
+                        "longitude": "013 36 13 W",
+                        "tzRegionName": "Atlantic/Canary",
+                        "timezoneCode": "ES2",
+                        "airports": [
+                            {
+                                "iataCode": "ACE",
+                                "name": "LANZAROTE AIRPORT",
+                                "locationType": "A"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "countryCode": "FR",
+                "countryName": "FRANCE",
+                "cities": [
+                    {
+                        "iataCode": "AGF",
+                        "name": "AGEN",
+                        "latitude": "44 10 25 N",
+                        "longitude": "000 35 55 E",
+                        "tzRegionName": "Europe/Paris",
+                        "timezoneCode": "FR",
+                        "airports": [
+                            {
+                                "iataCode": "AGF",
+                                "name": "LA GARENNE AIRPORT",
+                                "locationType": "A"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
