@@ -18,7 +18,7 @@ import org.junit.Test;
  * @author t328469
  *
  */
-public class StreamMap {
+public class StreamListToMap {
 
 	List<Person> persons = null;
 	
@@ -33,7 +33,7 @@ public class StreamMap {
 	}
 
 	/**
-	 * USE 1 : Transformer une liste avec .map()
+	 * USE 1 : Transformer une List en Map (avec: Collectors.toMap(...) )
 	 */
 	@Test
 	public void map() {

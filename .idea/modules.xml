@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/java8-at-Anaolabs.iml" filepath="$PROJECT_DIR$/java8-at-Anaolabs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java8-rebooted/java8-rebooted.iml" filepath="$PROJECT_DIR$/java8-rebooted/java8-rebooted.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java8-tutoOracle/java8-tutoOracle.iml" filepath="$PROJECT_DIR$/java8-tutoOracle/java8-tutoOracle.iml" />
+    </modules>
+  </component>
+</project>

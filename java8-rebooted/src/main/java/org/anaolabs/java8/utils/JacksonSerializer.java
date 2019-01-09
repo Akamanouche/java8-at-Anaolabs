@@ -4,13 +4,19 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * A generic data mocker only for test purposes
- * 
- */
-public class DataMocker {
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
-    ReadWriteFile dataLoader;
+/**
+ * A generic serializer/deserializer
+ * 
+ * REMEMBER THAT
+ * 	serializer : 	JAVA ==> JSON
+ * 	deserializer :	JSON ==> JAVA
+ */
+public class JacksonSerializer {
+
+    ReadWriteFile dataLoader = new ReadWriteFile();
 
     /**
      * Get a generic list of objects based on data provided in a JSON file
@@ -19,10 +25,10 @@ public class DataMocker {
      * @return a list of object
      */
     @SuppressWarnings({"unchecked"})
-    public List<Object> getMockDataAsObjectList(String mockDataPath, Class<?> clazz) throws IOException {
+    public List<Object> deserialize(String mockDataPath, Class<?> clazz) throws IOException {
 
         // Get mock data as string
-        String mockDataAsStr = dataLoader.readSmallFileOneShot(mockDataPath);
+        String mockDataAsStr = dataLoader.readSmallFileAsStr(mockDataPath);
 
         // Get mock data as object list
         ObjectMapper jacksonMapper = new ObjectMapper();

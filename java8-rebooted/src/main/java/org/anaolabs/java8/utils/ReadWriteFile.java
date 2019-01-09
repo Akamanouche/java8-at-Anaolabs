@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * Lecture/Ecriture de fichier savec le JDK 7.
+ * Lecture/Ecriture de fichier avec le JDK 7.
  *
  * Utilisation des classes du package  java.nio :
  * - l'interface {@link Path}
@@ -51,11 +51,9 @@ public class ReadWriteFile {
 	
 
 	
-    public String readSmallFileOneShot(String filepath) throws IOException {
-        Path path = Paths.get(filepath);
-        
-        return new String( Files.readAllBytes(path), "UTF-8"); 
-        
+    public String readSmallFileAsStr(String filepath) throws IOException {
+    		Path path = Paths.get(filepath);
+    		return new String( Files.readAllBytes(path), "UTF-8"); 
     }
 	
 	
