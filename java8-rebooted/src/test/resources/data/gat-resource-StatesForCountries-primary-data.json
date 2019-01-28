@@ -1,0 +1,32 @@
+[
+    {
+        "countryCode": "US",
+        "stateName": "Alabama",
+        "stateCode": "US-AL"
+    },
+    {
+        "countryCode": "US",
+		"stateCode" : "US-NY",
+        "stateName" : "New York"
+    },
+    {
+        "countryCode": "BR",
+		"stateCode" : "BR-BA",
+		"stateName" : "Bahia"
+    },
+    {
+        "countryCode": "BR",
+		"stateCode" : "BR-MG",
+		"stateName" : "Minas Gerais"
+    },
+    {
+        "countryCode": "BR",
+		"stateCode" : "BR-MT",
+		"stateName" : "Mato Grosso"
+    },
+    {
+        "countryCode": "BR",
+		"stateCode" : "BR-PR",
+		"stateName" : "Parana"
+    }
+]

@@ -1,18 +1,18 @@
 package org.anaolabs.java8.utils;
 
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * A generic serializer/deserializer
  * 
  * REMEMBER THAT
- * 	serializer : 	JAVA ==> JSON
- * 	deserializer :	JSON ==> JAVA
+ * serializer : JAVA ==> JSON
+ * deserializer : JSON ==> JAVA
  */
 public class JacksonSerializer {
 
@@ -25,7 +25,7 @@ public class JacksonSerializer {
      * @return a list of object
      */
     @SuppressWarnings({"unchecked"})
-    public List<Object> deserialize(String mockDataPath, Class<?> clazz) throws IOException {
+    public List<?> deserialize(String mockDataPath, Class<?> clazz) throws IOException {
 
         // Get mock data as string
         String mockDataAsStr = dataLoader.readSmallFileAsStr(mockDataPath);
