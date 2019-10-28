@@ -94,6 +94,38 @@ public class FilteringMaps {
 
     }
 
+    ///////////////////////////////////////////////////
+    // Map -> Stream -> Map value : change of type
+    ///////////////////////////////////////////////////
+    @Test
+    public void transformValue() {
+        Map<String, String> m1 = new HashMap<>();
+        m1.put("1", "ONE");
+        m1.put("2", "TWO");
+        
+        // ************************************************************************************************************
+        // Ce qui suit ne compile pas !
+        //  ==> Erreur : "Type mismatch: cannot convert from Map<Object,Object> to Map<Integer,String>"
+        //
+        // Alors que de nombreux exemples fonctoionnent ailleurs :
+        //  > https://www.techiedelight.com/transform-hashmap-java-8/
+        //  > ...
+        // ************************************************************************************************************
+
+        Map<Integer, String> m2 = m1
+                .entrySet()
+                .stream()
+                .collect(Collectors.toMap(
+                    e -> Integer.parseInt(e.getKey()),
+                    e -> e.getValue()));
+        
+        m2.entrySet()
+        .stream()
+        .forEach(e -> {System.out.println(String.format("Integer: %d", e.getKey()));});
+
+    }
+    
+    
     
 	///////////////////////////////////////////////////////////////////////////
 	// Some utils function

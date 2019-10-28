@@ -1,0 +1,85 @@
+Airport::4::Access::3::false
+Airport::4::Airport Service::8::false
+Airport::4::Assistive device::9::false
+Airport::4::At the gate::6::false
+Airport::4::Check In::2::false
+Airport::4::Lack of Assistance::4::false
+Airport::4::Lounge::5::false
+Airport::4::Railway/SNCF related incidents::10::false
+Airport::4::Security checks and Immigration::7::false
+Airport::4::Transfer::1::false
+Baggage::2::Animal::9::false
+Baggage::2::Bag refused in cabin::6::false
+Baggage::2::Damage::2::false
+Baggage::2::Damaged Content::7::false
+Baggage::2::Delay::1::false
+Baggage::2::Excess of luggage::5::false
+Baggage::2::Loss::3::false
+Baggage::2::Lost and Found::8::false
+Baggage::2::Pilferage::4::false
+Feedback and Request::7::Baggage Locker::18::false
+Feedback and Request::7::Complimentary Services::9::false
+Feedback and Request::7::Compliments::1::false
+Feedback and Request::7::Discrimination passengers::15::false
+Feedback and Request::7::DutyFree/Shops/Restaurants/Bars::16::false
+Feedback and Request::7::Incompatibility BS::12::false
+Feedback and Request::7::Lack of information::5::false
+Feedback and Request::7::Negative publicity in media::17::false
+Feedback and Request::7::Personal Information requested::3::false
+Feedback and Request::7::Productsservices::8::false
+Feedback and Request::7::Quality of aircrafts::11::false
+Feedback and Request::7::Request Certificate::7::false
+Feedback and Request::7::Safety Security::14::false
+Feedback and Request::7::Thanks to Doctors::13::false
+Feedback and Request::7::Travel time Flight Routes::10::false
+Feedback and Request::7::WPS behaviour::6::false
+Feedback and Request::7::Waiting time too long::2::false
+Feedback and Request::7::emd::4::false
+Flight Disruption::1::Cancellation::3::false
+Flight Disruption::1::Cancellation + Reroute::4::false
+Flight Disruption::1::DBC Involuntary::5::false
+Flight Disruption::1::DBC Involuntary + Reroute::6::false
+Flight Disruption::1::DBC Voluntary::9::false
+Flight Disruption::1::Delay::1::true
+Flight Disruption::1::Delay + Reroute::2::false
+Flight Disruption::1::Diversion::8::false
+Flight Disruption::1::Downgrade Involuntary::7::false
+Flight Disruption::1::Downgrade Voluntary::10::false
+Flying Blue::8::Award tickets::1::false
+Flying Blue::8::Info not received::2::false
+Flying Blue::8::Lounge service and Access::3::false
+Flying Blue::8::Retroclaim::4::false
+Flying Blue::8::Service line::5::false
+Flying Blue::8::Status of FB account::6::false
+Flying Blue::8::Web issues::7::false
+Inflight::3::Cabin Environment::5::false
+Inflight::3::Cabin Equipment::1::false
+Inflight::3::Catering::3::false
+Inflight::3::Circumstances::4::false
+Inflight::3::Products and services::6::false
+Inflight::3::Seat::2::false
+Paid Options::6::A la carte meal::9::false
+Paid Options::6::Additional Bag Allowance::1::false
+Paid Options::6::Change seat Allocation::6::false
+Paid Options::6::Co2 compensation::15::false
+Paid Options::6::Economy Comfort::2::false
+Paid Options::6::Economy Product Choice::11::false
+Paid Options::6::Economy Product Fare::10::false
+Paid Options::6::Extra Legroom/Two- seater::8::false
+Paid Options::6::First checked in bag::5::false
+Paid Options::6::La Premiere Service CDG/ access lounge::14::false
+Paid Options::6::Lounge-access::13::false
+Paid Options::6::Others::17::false
+Paid Options::6::Paid Upgrade/ Upgrade day of departure/Miles upgrade::3::false
+Paid Options::6::Seat Plus::4::false
+Paid Options::6::Standard seat selection::7::false
+Paid Options::6::Wifi::12::false
+Paid Options::6::Wijet incident::16::false
+Pre journey::5::Booking Error::2::false
+Pre journey::5::Complimentary Services (hotels, ground transport etc)::7::false
+Pre journey::5::Fare Conditions::1::false
+Pre journey::5::Land Packages::8::false
+Pre journey::5::Payment Error::4::false
+Pre journey::5::Pricing policy::5::false
+Pre journey::5::Reservation surcharges::6::false
+Pre journey::5::Website functions::3::false
