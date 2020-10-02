@@ -1,4 +1,4 @@
-package org.anaolabs.java8.streams.newuse.grouping;
+package org.anaolabs.java8.streams.newuse.grouping.afklm;
 
 import org.anaolabs.java8.utils.ReadWriteFile;
 import org.junit.Before;

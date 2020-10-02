@@ -1,4 +1,4 @@
-package org.anaolabs.java8.streams.newuse.grouping;
+package org.anaolabs.java8.streams.newuse.grouping.afklm;
 
 /**
  * Handles a relation Category/SubCategory as provided in {@link DataInFileEnum#CATEG_SUBCATEG_RELATIONS}

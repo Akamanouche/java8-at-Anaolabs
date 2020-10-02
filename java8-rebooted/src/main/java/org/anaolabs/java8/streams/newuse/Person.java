@@ -20,6 +20,26 @@ public class Person {
 		this.age = age;
 	}
 	
+	
+	
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+
+
+
+	/**
+	 * @return the age
+	 */
+	public int getAge() {
+		return age;
+	}
+
+
+
 	@Override
 	public String toString() {
 		
