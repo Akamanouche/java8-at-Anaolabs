@@ -29,6 +29,7 @@ public class OptionalWithStream {
 		Stream.of( Optional.empty(), "a2", "a3" )
 			.findFirst()
 //			.orElse( "Empty element !!" )
-			.ifPresent( System.out::println );
+			.ifPresent( System.out::println )
+		;
 	}
 }

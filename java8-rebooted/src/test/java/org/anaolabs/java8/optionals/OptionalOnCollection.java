@@ -2,10 +2,7 @@ package org.anaolabs.java8.optionals;
 
 import org.junit.Test;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Stream;
 
 /**
@@ -20,13 +17,17 @@ public class OptionalOnCollection {
      * RAPPEL PRELIMINAIRE :
      * ==> "foreach" raises a NullPointerException if List is null;
      */
-    @Test(expected = NullPointerException.class)
+    //@Test(expected = NullPointerException.class)
+    @Test
     public void testForOnNullList() {
 
         // Null collection
         List<String> claims = null;
 
         // Ceci lève une NullPointerException
+        claims.stream().forEach( c -> System.out.println(c));
+
+        // Ici aussi !
         for (String claim : claims) {
             System.out.println("claim is " + claim);
         }
@@ -40,18 +41,20 @@ public class OptionalOnCollection {
     public void testForOnNullListWithOptional() {
         // Null collection
         List<String> claims = null;
+        //List<String> claims = Arrays.asList("un", "dexu");
 
         // No NullPointerException raised here
         Optional.ofNullable(claims)
             .map(Collection::stream)
             .orElseGet(Stream::empty)
-            .forEach(claim -> System.out.println("claim"));
+            .forEach(c -> System.out.println(c));
 
         // Plus élégant :
         Optional.ofNullable(claims)
-            .orElse(Collections.emptyList())
+            //.orElse(Collections.emptyList())
+            .orElse(Arrays.asList("empty list !"))
             .stream()
-            .forEach(claim -> System.out.println("claim"));
+            .forEach(c -> System.out.println(c));
 
     }
 

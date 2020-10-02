@@ -1,12 +1,69 @@
-###################
-## Eclipse projects
-###################
+# 1) General ignores for Eclipse
+# 2) General ignores for IntelliJ IDE
+# 3) Misc others
 
+# -----------------------------------
+# 1) General ignores for Eclipse     
+# -----------------------------------
 .metadata
 bin/
 tmp/
-target/
 .settings/
 *.tmp
 *.bak
 
+
+# -----------------------------------------------------------------------------
+# 2) General ignores inspiré de :
+# > https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore
+# -----------------------------------------------------------------------------
+
+# User-specific stuff
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+# Generated files
+.idea/**/contentModel.xml
+
+# Sensitive or high-churn files
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+
+# [...]
+
+# File-based project format
+*.iws
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# [...]
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+
+# -----------------------------------------------------------------------------
+# 3) Misc others
+# -----------------------------------------------------------------------------
+
+# Maven
+log/
+target/
+
+# Application logs
+applog/
